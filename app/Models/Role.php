@@ -10,6 +10,12 @@ class Role extends Model
 {
     use HasFactory;
 
+    public const IS_SUPER_ADMIN = 1;
+    public const IS_CUSTOMER = 2;
+    public const IS_SHOP_SALES = 3;
+    public const IS_SHOP_CS = 4;
+    public const IS_SHOP_ADMIN = 5;
+
     protected $fillable = [
         'name'
     ];
